@@ -160,17 +160,6 @@ middleware.InitMetrics()
 
 ---
 
-## Known Gaps / TODO
-
-- [ ] Call `middleware.InitMetrics()` in `main.go` (counters unregistered today).
-- [ ] Finish Kafka producer wiring in middleware (`SendEvent` on allowed + blocked).
-- [ ] Add graceful shutdown (`signal.NotifyContext` + `http.Server.Shutdown`).
-- [ ] Replace per-node sharded Redis with a real cluster if cross-node quota consistency is needed.
-- [ ] Histogram for Lua call latency (currently only counters).
-- [ ] Integration tests against a real Redis (no mocks).
-
----
-
 ## Tech Stack
 
 - Go 1.24
